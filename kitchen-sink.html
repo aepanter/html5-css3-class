@@ -7,17 +7,22 @@
         <meta name="description" content="my amazing site that is so neat" />
     </head>  
         <body>
-            <h1>Kitchen sink</h1>
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">My super homepage</a></li>
-                    <li><a href="kitchen-sink.html">Kitchen Sink</a></li>
-                    <li><a href="https://extension.berkeley.edu/" target="_blank">UC Berkeley Extension Site (opens in new window)</a></li>
-                </ul>
-            </nav>
+            <header>
+                <p>Kitchen Sink page</p>
+               <nav>
+                   <ul>
+                       <li><a href="index.html">Home</a>
+                       </li>
+                       <li><a href="kitchen-sink.html">All our tags</a>
+                       </li>
+                       <li>
+                           <a href="semantic-markup.html">Semantic Page</a>
+                       </li>
+                   </ul>
+               </nav>
+           </header>
 
-
+           <h1>Kitchen sink</h1>
             <h2>heading 2</h2>
             <h3>heading 3</h3>
             <h4>heading 4</h4>
@@ -40,11 +45,6 @@
                 <li>list item one</li>
                 <li>list item two</li>
                 <li>liste item three</li>
-                <li><br />
-                    <ul>
-                    <li>embeding the list within the list</li>
-                    <li>jelly beans!</li>
-                </ul></li>
             </ol>
 
             <ul>
@@ -52,5 +52,38 @@
                 <li>list item two</li>
                 <li>another list item in a bulleted list!</li>
             </ul>
+
+            <a href="https://google.com">Link to Google</a>
+            <a href="https://yahoo.com" target="_blank">Link to yahoo!</a>
+
+            <!-- This is external -->
+            <img src="http://placehold.it/125x100" />
+
+            <!--This is an internal image-->
+            <img src="./assets/images/german-shepherd.jpeg" />
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 15px;
+            }
+        </style>
+            <table>
+                <thead>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>table cell one</td>
+                        <td>table cell two</td>
+                        <td>table cell three</td>
+                    </tr>
+                </tbody>
+            </table>
         </body>  
 </html>
