@@ -1,0 +1,83 @@
+/* This is my first comment about this. It is neat and very cool. */
+html {
+    /* background-color: blue; */
+    font-family: sans-serif;
+} 
+h1 {
+    font-family: cursive; 
+    color: purple; 
+}
+
+/* body {
+    background-color: pink;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 28px;
+    /* display: inline-block;
+    visibility: hidden;*/
+} 
+
+.red-box {
+    background-color: red;
+}
+.yellow-box {
+    background-color: yellow;
+}
+.green-box {
+    background-color: green;
+}
+
+.red-box-see-through {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.yellow-box-see-through {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.green-box-see-through {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.center-align-text {
+    text-align: center;
+}
+
+.right-align-text {
+    text-align: right;
+}
+
+.left-align-text {
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+/* CSS shortcode top > right > bottom > left and can abbreviete with 1 - 4 numbers */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
