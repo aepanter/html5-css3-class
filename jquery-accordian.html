@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery accordian</title>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .remainder-text {
+                display: none;
+            }
+
+            button {
+                background: transparent;
+                border: none;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>  
+    <body>
+        <h1>jQuery accordian</h1>
+        <div class="container">
+            <p class="intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus urna et diam dapibus dapibus ut id nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies consequat quam, pretium imperdiet purus lacinia in. Pellentesque nec arcu nec libero egestas rutrum. Proin euismod, urna in pulvinar tristique, purus turpis placerat metus, a accumsan enim justo sed erat. Proin dignissim nibh sem, vel tempor metus rhoncus vitae. Aenean nisi mi, imperdiet vitae lobortis euismod, placerat nec sapien. Vivamus condimentum ac massa sit amet tincidunt. Aenean rhoncus lorem id velit lobortis, nec pharetra tortor vestibulum. Sed lacinia tortor fermentum consectetur vehicula.
+            </p>
+
+            <p class="remainder-text">
+                Fusce eu quam malesuada, accumsan quam at, ultricies est. Maecenas vitae elementum sem, et accumsan ipsum. In tellus sapien, hendrerit eget commodo ac, pharetra sed dui. Sed posuere molestie lectus quis consectetur. Nulla vel tristique nisi. In massa metus, tincidunt iaculis rutrum nec, scelerisque sit amet nibh. Integer velit nibh, mattis sit amet felis id, fringilla pretium leo. Nunc luctus ante ante, eget congue felis cursus eget. Donec tempor, arcu id bibendum volutpat, massa lectus vestibulum justo, at cursus tortor nisi id sem. Cras cursus malesuada tincidunt. Phasellus pulvinar dapibus nunc, at ultrices enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis id dapibus leo, non accumsan augue. Nulla semper erat a lacus egestas bibendum.
+            </p>
+
+            <button type="button" class="toggle-button">show more</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function() {
+              $('.toggle-button').on('click', function(){
+                const buttonText = $(this).text().toLowerCase();
+        
+                $(this).prev('.remainder-text').slideToggle();
+                $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+              });
+            });
+          </script>
+
+
+    </body>  
+</html>
